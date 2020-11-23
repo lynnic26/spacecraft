@@ -1,0 +1,13 @@
+name: test-workflow
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  test-id:
+    name: Lint code base
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
